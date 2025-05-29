@@ -3,7 +3,7 @@ package org.duoc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
+public class Cliente implements InformacionCliente {
     //Atributos
     private String rut;
     private String nombre;
@@ -60,6 +60,7 @@ public class Cliente {
         return false;
     }
 
+    @Override
     public void mostrarDatos() {
         System.out.println("Rut: " + rut);
         System.out.println("Nombre: " + nombre);
